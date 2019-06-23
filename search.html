@@ -1,0 +1,493 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Equalbit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="./fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Hover Css -->
+    <link href="css/hover-min.css" rel="stylesheet">
+
+    <!-- Animate Css -->
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <!-- Animsition -->
+    <link href="css/animsition.min.css" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
+
+  	<!-- Core css -->
+    <link href="css/app.css" rel="stylesheet" class="core-css">
+		<link href="./css/style.css" rel="stylesheet" class="core-css">
+  </head>
+
+	<body>
+
+    <!-- wrapper -->
+		<div class="wrapper  has-footer">
+
+      <!-- Start Header -->
+      <header class="header-top navbar">
+
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle side-nav-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="#">
+						<img src="./img/equalbit-logo.png" alt="">
+					</a>
+
+          <ul class="nav navbar-nav-xs">
+            <li>
+              <a href="#" class="font-lg collapse" data-toggle="collapse" data-target="#headerNavbarCollapse">
+                <i class="icon-user move-d-1"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="search-toggle">
+                <i class="fa fa-search"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="toggle-right-sidebar">
+                <i class="icon-menu2"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="headerNavbarCollapse">
+          <ul class="nav navbar-nav">
+
+
+
+
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle font-lg" data-toggle="dropdown">
+								<i class="fa fa-bell-o" aria-hidden="true"></i>
+								<span class="badge bg-danger">3</span>
+								<span class="hidden-sm hidden-md hidden-lg font-12 m-l-5">New Account</span>
+							</a>
+							<ul class="dropdown-menu dropdown-animated pop-effect dropdown-lg list-group-dropdown">
+								<li class="no-link font-12">You have 5 new notifications</li>
+								<li>
+									<a href="#">
+										<div class="user-list-wrap">
+											<div class="profile-pic"><img src="../img/profile2.jpg" alt=""></div>
+											<div class="detail">
+												<span class="text-normal">Carrie Orr</span>
+												<span class="time">2 mins ago</span>
+												<p class="font-11 no-m-b text-overflow">Start following you</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="user-list-wrap">
+											<div class="profile-pic"><img src="../img/profile3.jpg" alt=""></div>
+											<div class="detail">
+												<span class="text-normal">James Wygant</span>
+												<span class="time">1 hr ago</span>
+												<p class="font-11 no-m-b text-overflow">Accepted your friend request</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="user-list-wrap">
+											<div class="profile-pic"><img src="../img/profile4.jpg" alt=""></div>
+											<div class="detail">
+												<span class="text-normal">Mary Cormier</span>
+												<span class="time">yesterday</span>
+												<p class="font-11 no-m-b text-overflow">Sent you a friend request</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="user-list-wrap">
+											<div class="profile-pic"><img src="../img/profile5.jpg" alt=""></div>
+											<div class="detail">
+												<span class="text-normal">Erica Conley</span>
+												<span class="time">2 days ago</span>
+												<p class="font-11 no-m-b text-overflow">Start following you</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li><a href="#" class="text-center">See all</a></li>
+							</ul>
+						</li>
+            <li class="user-profile dropdown">
+              <a href="#" class="clearfix dropdown-toggle" data-toggle="dropdown">
+                <img src="img/profile1.jpg" alt="" class="hidden-sm">
+                <div class="user-name">John Doe <span class="caret m-l-5"></span></div>
+              </a>
+              <ul class="dropdown-menu dropdown-animated pop-effect" role="menu">
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">My Tasks</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </header>
+      <!-- End Header -->
+
+      <!-- Start Side Navigation -->
+      <aside class="side-navigation-wrap sidebar-fixed">
+        <div class="sidenav-inner">
+          <ul class="side-nav magic-nav">
+            <li class="side-nav-header">
+              Navigation
+
+            </li>
+            <li class="first-link"><a href="index.html" class="animsition-link">
+							<i class="fa fa-university" aria-hidden="true"></i>
+							<span class="nav-text">Dashboard</span></a>
+						</li>
+            <li class="has-submenu active">
+              <a href="#submenu1" data-toggle="collapse" aria-expanded="false">
+                <i class="fa fa-users" aria-hidden="true"></i> <span class="nav-text">Members</span>
+                <span class="badge bg-danger">9</span>
+              </a>
+              <div class="sub-menu collapse secondary list-style-circle" id="submenu1">
+                <ul>
+                  <li><a href="ui_element.html" class="animsition-link">Basic Elements</a></li>
+                  <li><a href="button.html" class="animsition-link">Basic Elements</a></li>
+                  <li class="has-submenu">
+                    <a href="#submenu2" data-toggle="collapse" aria-expanded="false">Basic Elements</a>
+                    <div class="sub-menu collapse tertiary list-style-dashed" id="submenu2">
+                      <ul>
+                        <li><a href="static_table.html" class="animsition-link">Basic Elements</a></li>
+                        <li><a href="datatable.html" class="animsition-link">Basic Elements</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+						<li class=""><a href="index.html" class="animsition-link">
+							<i class="fa fa-tty" aria-hidden="true"></i>
+							<span class="nav-text">Call</span></a>
+						</li>
+						<li class=""><a href="index.html" class="animsition-link">
+							<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							<span class="nav-text">Order</span></a>
+						</li>
+          </ul>
+        </div><!-- /.sidebar-inner -->
+      </aside>
+      <!-- End Side Navigation -->
+
+
+      <!-- Start Main Container -->
+      <div class="main-container">
+
+
+				<div class="content-wrap">
+					<div class="panel panel-default">
+            <div class="panel-heading font-header">Cohort Builder</div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <select class="form-control" >
+                              <option disabled selected>Choose Gender</option>
+                              <option value="2">Male</option>
+                              <option value="3">Femle</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <select class="form-control">
+                              <option>Choose State</option>
+                              <option value="2">State1</option>
+                              <option value="3">State2</option>
+                            </select>
+                          </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="bmd-label-floating floting-label">Country</label>
+                            <select class="form-control">
+                              <option>Choose Country</option>
+                              <option value="2">Country1</option>
+                              <option value="3">Country2</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="bmd-label-floating floting-label">Age</label>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Max">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <input type="email" class="form-control" placeholder="min">
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group bmd-form-group">
+                            <label class="bmd-label-floating floting-label">From</label>
+                            <input type="text" class="form-control datepicker" value="10/06/2018">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="bmd-label-floating floting-label">To</label>
+                            <input type="text" class="form-control datepicker" value="10/06/2018">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                              <label class="switch-toggle">
+                                <input type="checkbox" checked="">
+                                <span></span> Annual Exam
+                              </label>
+                            </div>
+                            <div class="col-md-8 hide">
+
+
+                            </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                              <label class="switch-toggle">
+                                <input type="checkbox" checked="">
+                                <span></span>
+                                Utilization Amount
+                              </label>
+                            </div>
+                            <div class="col-md-12 toggle-content">
+                              <div class="row">
+
+                                <div class="col-md-8">
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="0.00" disabled>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="0.00" disabled>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col-md-12">
+
+                                  <div class="checkbox-inline">
+                                    <div class="custom-checkbox font-12">
+                                      <input type="checkbox" name="chk1" id="chk1" checked>
+                                      <label for="chk1">All</label>
+                                    </div>
+                                  </div>
+
+                                  <div class="checkbox-inline">
+                                    <div class="custom-checkbox font-12 ">
+                                      <input type="checkbox" name="chk2" id="chk2" checked>
+                                      <label for="chk2">IP</label>
+                                    </div>
+                                  </div>
+
+                                  <div class="checkbox-inline">
+                                    <div class="custom-checkbox font-12 ">
+                                      <input type="checkbox" name="chk3" id="chk3" checked>
+                                      <label for="chk3">OP</label>
+                                    </div>
+                                  </div>
+
+                                  <div class="checkbox-inline">
+                                    <div class="custom-checkbox font-12">
+                                      <input type="checkbox" name="chk4" id="chk4" checked>
+                                      <label for="chk4">PC</label>
+                                    </div>
+                                  </div>
+
+                                  <div class="checkbox-inline">
+                                    <div class="custom-checkbox font-12">
+                                      <input type="checkbox" name="chk5" id="chk5" checked>
+                                      <label for="chk5">CC</label>
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+
+                            </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                              <label class="switch-toggle">
+                                <input type="checkbox" checked="">
+                                <span></span> IP Event
+                              </label>
+                            </div>
+                            <div class="col-md-12 toggle-content">
+                              <select class="form-control">
+                                <option>Select some Option</option>
+                                <option value="2">Option 1</option>
+                                <option value="3">Option 2</option>
+                              </select>
+
+                            </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="form-group">
+                        <label class="bmd-label-floating floting-label">Chronic Condition</label>
+                        <input type="text" class="form-control" placeholder="">
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="form-group">
+                        <label class="bmd-label-floating floting-label">Hierachical Condition Category</label>
+                        <input type="text" class="form-control" placeholder="">
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="form-group">
+                        <label class="bmd-label-floating floting-label">Prescription</label>
+                        <input type="text" class="form-control" placeholder="">
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                              <label class="switch-toggle">
+                                <input type="checkbox" checked="">
+                                <span></span> Procedure
+                              </label>
+                            </div>
+                            <div class="col-md-12 toggle-content">
+                              <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Choose a Conducted or Not Conducted">
+                              </div>
+                              <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                              </div>
+                            </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="text-right">
+                  <button type="button" class="btn btn-gray">Reset</button>
+                  <button type="submit" class="btn btn-main">Search</button>
+                </div>
+
+              </div>
+          </div>
+				</div>
+      </div>
+      <!-- End Main Container -->
+
+      <!-- Start Footer -->
+      <footer class="footer">
+        &copy; 2019. <b>Equabit</b></b>
+      </footer>
+      <!-- End Footer -->
+
+
+      <!-- End Modal -->
+    </div>
+    <!-- /.wrapper -->
+
+		<!-- Jquery -->
+  	<script src="js/jquery-1.11.2.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="bootstrap/bootstrap.min.js"></script>
+
+  	<!-- Modernizr -->
+    <script src="js/modernizr.min.js"></script>
+
+    <!-- SlimScroll -->
+    <script src="js/jquery.slimscroll.min.js"></script>
+
+    <!-- Animsition -->
+    <script src="js/jquery.animsition.min.js"></script>
+
+    <!-- App -->
+    <script src="js/app.min.js"></script>
+
+	</body>
+</html>
