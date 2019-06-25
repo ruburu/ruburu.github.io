@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,17 +12,25 @@
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Select2 -->
+    <link href="css/select2.min.css" rel="stylesheet">
+
     <!-- Font Awesome -->
     <link href="./fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
 
     <!-- Hover Css -->
     <link href="css/hover-min.css" rel="stylesheet">
 
+    <!-- Date Picker -->
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
     <!-- Animate Css -->
     <link href="css/animate.min.css" rel="stylesheet">
 
     <!-- Animsition -->
     <link href="css/animsition.min.css" rel="stylesheet">
+
+    <link href="./css/amsify.suggestags.css" rel="stylesheet">
 
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
 
@@ -48,25 +55,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-
+          <a href="#" class="font-lg sidenav-size-toggle hidden-xs">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </a>
           <a class="navbar-brand" href="#">
-						<img src="./img/equalbit-logo.png" alt="">
-					</a>
+            <img src="./img/equalbit-logo.png" alt="">
+          </a>
 
           <ul class="nav navbar-nav-xs">
             <li>
               <a href="#" class="font-lg collapse" data-toggle="collapse" data-target="#headerNavbarCollapse">
-                <i class="icon-user move-d-1"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="search-toggle">
-                <i class="fa fa-search"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="toggle-right-sidebar">
-                <i class="icon-menu2"></i>
+                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
@@ -75,12 +74,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="headerNavbarCollapse">
           <ul class="nav navbar-nav">
+            <li class="hidden-xs">
 
-
-
-
-
+            </li>
           </ul>
+
           <ul class="nav navbar-nav navbar-right">
 
 
@@ -173,34 +171,19 @@
 							<i class="fa fa-university" aria-hidden="true"></i>
 							<span class="nav-text">Dashboard</span></a>
 						</li>
-
-			
 						<li class=""><a href="search.html" class="animsition-link">
-							<i class="fa fa-tty" aria-hidden="true"></i>
-							<span class="nav-text">Search Members</span></a>
+							<i class="fa fa-search" aria-hidden="true"></i>
+							<span class="nav-text">Search</span></a>
 						</li>
-            <li class="has-submenu active">
-              <a href="#submenu1" data-toggle="collapse" aria-expanded="false">
-                <i class="fa fa-users" aria-hidden="true"></i> <span class="nav-text">Members</span>
-                <span class="badge bg-danger">9</span>
-              </a>
-              <div class="sub-menu collapse secondary list-style-circle" id="submenu1">
-                <ul>
-                  <li><a href="ui_element.html" class="animsition-link">Basic Elements</a></li>
-                  <li><a href="button.html" class="animsition-link">Basic Elements</a></li>
-                  <li class="has-submenu">
-                    <a href="#submenu2" data-toggle="collapse" aria-expanded="false">Basic Elements</a>
-                    <div class="sub-menu collapse tertiary list-style-dashed" id="submenu2">
-                      <ul>
-                        <li><a href="static_table.html" class="animsition-link">Basic Elements</a></li>
-                        <li><a href="datatable.html" class="animsition-link">Basic Elements</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
+						<li class=""><a href="search-result.html" class="animsition-link">
+							<i class="fa fa-users" aria-hidden="true"></i>
+							<span class="nav-text">Members</span></a>
+						</li>
+            
+						<li class=""><a href="index.html" class="animsition-link">
+							<i class="fa fa-tty" aria-hidden="true"></i>
+							<span class="nav-text">Call</span></a>
+						</li>
 						<li class=""><a href="index.html" class="animsition-link">
 							<i class="fa fa-shopping-bag" aria-hidden="true"></i>
 							<span class="nav-text">Order</span></a>
@@ -224,19 +207,20 @@
                     <div class="row">
                         <div class="col-md-6">
                           <div class="form-group">
-                            <select class="form-control" >
-                              <option disabled selected>Choose Gender</option>
-                              <option value="2">Male</option>
-                              <option value="3">Femle</option>
+                            <select class="form-control chosen-gender" multiple>
+                              <option>Male</option>
+                              <option>Female</option>
                             </select>
                           </div>
                         </div>
                         <div class="col-md-6">
                           <div class="form-group">
-                            <select class="form-control">
-                              <option>Choose State</option>
-                              <option value="2">State1</option>
-                              <option value="3">State2</option>
+                            <select class="form-control chosen-state" multiple>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
                             </select>
                           </div>
                         </div>
@@ -247,10 +231,12 @@
                         <div class="col-md-6">
                           <div class="form-group">
                             <label class="bmd-label-floating floting-label">Country</label>
-                            <select class="form-control">
-                              <option>Choose Country</option>
-                              <option value="2">Country1</option>
-                              <option value="3">Country2</option>
+                            <select class="form-control chosen-country" multiple>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
                             </select>
                           </div>
                         </div>
@@ -278,13 +264,13 @@
                       <div class="col-md-6">
                         <div class="form-group bmd-form-group">
                             <label class="bmd-label-floating floting-label">From</label>
-                            <input type="text" class="form-control datepicker" value="10/06/2018">
+                            <input type="text" class="form-control datepicker" id="datetimepicker1">
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating floting-label">To</label>
-                            <input type="text" class="form-control datepicker" value="10/06/2018">
+                            <input type="text" class="form-control datepicker" id="datetimepicker2">
                         </div>
                       </div>
                     </div>
@@ -294,7 +280,7 @@
                         <div class="row">
                             <div class="col-md-6">
                               <label class="switch-toggle">
-                                <input type="checkbox" checked="">
+                                <input type="checkbox">
                                 <span></span> Annual Exam
                               </label>
                             </div>
@@ -312,12 +298,12 @@
                         <div class="row">
                             <div class="col-md-12">
                               <label class="switch-toggle">
-                                <input type="checkbox" checked="">
+                                <input type="checkbox">
                                 <span></span>
                                 Utilization Amount
                               </label>
                             </div>
-                            <div class="col-md-12 toggle-content">
+                            <div class="col-md-12 toggle-content hide">
                               <div class="row">
 
                                 <div class="col-md-8">
@@ -386,11 +372,11 @@
                         <div class="row">
                             <div class="col-md-12">
                               <label class="switch-toggle">
-                                <input type="checkbox" checked="">
+                                <input type="checkbox">
                                 <span></span> IP Event
                               </label>
                             </div>
-                            <div class="col-md-12 toggle-content">
+                            <div class="col-md-12 toggle-content hide">
                               <select class="form-control">
                                 <option>Select some Option</option>
                                 <option value="2">Option 1</option>
@@ -410,20 +396,20 @@
                     <div class="card">
                       <div class="form-group">
                         <label class="bmd-label-floating floting-label">Chronic Condition</label>
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" name="chronic" class="form-control" placeholder="" value="red">
                       </div>
                     </div>
 
                     <div class="card">
                       <div class="form-group">
                         <label class="bmd-label-floating floting-label">Hierachical Condition Category</label>
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" name="chronic" class="form-control" placeholder="">
                       </div>
                     </div>
                     <div class="card">
                       <div class="form-group">
                         <label class="bmd-label-floating floting-label">Prescription</label>
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" name="chronic" class="form-control" placeholder="">
                       </div>
                     </div>
 
@@ -431,14 +417,23 @@
                       <div class="card-body">
                         <div class="row">
                             <div class="col-md-12">
-                              <label class="switch-toggle">
-                                <input type="checkbox" checked="">
+                              <label class="switch-toggle ">
+                                <input type="checkbox">
                                 <span></span> Procedure
                               </label>
                             </div>
-                            <div class="col-md-12 toggle-content">
+                            <div class="col-md-12 toggle-content hide">
                               <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Choose a Conducted or Not Conducted">
+                                <div class="toggle-text-btn">
+                                  <label>
+                                    <input type="radio" name="Conducted" value="" checked>
+                                    <span>Conducted</span>
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="Conducted" value="">
+                                    <span>Not Conducted</span>
+                                  </label>
+                                </div>
                               </div>
                               <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Search">
@@ -482,14 +477,62 @@
   	<!-- Modernizr -->
     <script src="js/modernizr.min.js"></script>
 
+    <!-- Select2 -->
+    <script src="js/select2.min.js"></script>
+
+    <!-- Moment -->
+    <script src="js/moment.min.js"></script>
+
+    <!-- Date Picker -->
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+
     <!-- SlimScroll -->
     <script src="js/jquery.slimscroll.min.js"></script>
 
     <!-- Animsition -->
     <script src="js/jquery.animsition.min.js"></script>
 
+    <script src="./js/jquery.amsify.suggestags.js"></script>
     <!-- App -->
     <script src="js/app.min.js"></script>
+
+    <script type="text/javascript">
+    $(function()  {
+
+        $('.chosen-state').select2({
+            placeholder: "Select a state"
+        });
+
+        $('.chosen-country').select2({
+            placeholder: "Select country"
+        });
+        $('.chosen-gender').select2({
+            placeholder: "Select Gender"
+        });
+
+        //Date Picker
+        $('.datepicker').datetimepicker();
+    });
+
+    </script>
+
+    <script type="text/javascript">
+    $('input[name="chronic"]').amsifySuggestags({
+      suggestions: ['Black', 'White', 'Red', 'Blue', 'Green', 'Orange']
+    });
+    </script>
+
+    <script type="text/javascript">
+      $('.switch-toggle input:checkbox').change(function() {
+        if ($(this).is(":checked")) {
+          $(this).closest('.switch-toggle').parent().siblings().removeClass("hide");
+        } else {
+          $(this).closest('.switch-toggle').parent().siblings().addClass("hide");
+        }
+      });
+    </script>
+
+
 
 	</body>
 </html>

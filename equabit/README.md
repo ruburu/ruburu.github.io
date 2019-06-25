@@ -1,2 +1,2 @@
 # equabit
-Equabit Mocups
+Equabit Mockups

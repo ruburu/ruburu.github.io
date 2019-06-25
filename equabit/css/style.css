@@ -7,7 +7,7 @@
 .navbar-toggle {
     padding: 9px 10px;
     margin-top: 11px;
-    background-color: #02365d;
+    background-color: #ffffff;
     margin-left: 15px;
 }
 .form-group {
@@ -21,4 +21,73 @@
 }
 .card .toggle-content{
   margin-top: 10px
+}
+.select2-container{
+  width: 100% !important
+}
+.select2-container--default .select2-selection--multiple {
+    height: auto;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+  font-size: 12px;
+  background-color: #fff;
+border: 1px solid #d5dbe0;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: #f15a26;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #005a89;
+}
+.sidenav-size-toggle {
+    padding: 0px 15px !important;
+    line-height: 60px !important;
+}
+.sidenav-size-toggle i {
+    color: #02365d;
+    font-size: 20px;
+}
+.table-pagination {
+    padding: 8px 15px;
+    border-top: 1px solid #e8e8e8;
+}
+.toggle-text-btn{
+  display: flex;
+}
+.toggle-text-btn label {
+    font-weight: 500;
+    font-size: 12px;
+}
+.toggle-text-btn label input{
+  display: none;
+}
+.toggle-text-btn label input + span {
+    display: inline-block;
+    padding: 6px 14px;
+    border: 1px solid #e6e4e4;
+    color: #b7c0ce;
+    cursor: pointer;
+}
+.toggle-text-btn label input:checked + span {
+    border: 1px solid #08294b;
+    background-color: #08294b;
+    color: white;
+}
+@media (min-width: 768px)
+{
+  .side-nav-sm .navbar {
+      margin-left: 50px;
+  }
+.navbar {
+    margin-left: 230px;
+}
+.side-navigation-wrap{
+  top: 0px
+}
+.collapse.navbar-collapse{
+  padding-left: 0px;
+}
+.header-top .navbar-brand{
+    float: right;
+}
 }
