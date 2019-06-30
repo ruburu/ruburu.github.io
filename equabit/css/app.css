@@ -1671,13 +1671,21 @@ hr.line-dark {
   border-left: 1px solid #e4eef0;
   border-right: 1px solid #e4eef0;
 }
+.close {
+    text-shadow: none !important;
+    opacity: .5 !important;
+    color: white;
+}
 @media (min-width: 768px) {
   .modal-md {
     width: 400px;
   }
 }
 .modal-header {
-  border-bottom-color: #f0f3f5;
+    border-bottom-color: #f0f3f5;
+    background-color: #02365d;
+    border-radius: 5px 5px 0px 0px;
+    color: white;
 }
 .modal-footer {
   border-top-color: #f0f3f5;
@@ -5041,14 +5049,14 @@ button {
   display: inline;
 }
 .custom-checkbox label {
-  position: relative;
-  padding-left: 20px;
-  cursor: pointer;
-  margin-left: -20px;
-  font-weight: 400;
-  display: inherit;
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    margin-left: -20px;
+    font-weight: 400;
+    display: inherit;
+    transform: translateZ(0);
+    font-size: 13px;
 }
 .custom-checkbox label:before,
 .custom-checkbox label:after {

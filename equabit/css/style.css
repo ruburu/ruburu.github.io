@@ -73,6 +73,35 @@ border: 1px solid #d5dbe0;
     background-color: #08294b;
     color: white;
 }
+ul.member-detail-list  li  span{
+  margin-right: 4px
+}
+ul.member-detail-list li {
+    border-bottom: 1px solid #f0f3f5;
+}
+.graph-container{
+
+}
+.checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline {
+    margin-left: 15px;
+}
+.order-request-list a {
+    border: 1px solid #e6e6e6;
+    display: block;
+    border-radius: 4px;
+    padding: 6px;
+}
+.order-request-list a img {
+    width: 100%;
+    max-width: 91px;
+    display: block;
+    margin: 11px auto;
+}
+.order-request-list a span {
+    display: block;
+    color: #02365c;
+    font-weight: 600;
+}
 @media (min-width: 768px)
 {
   .side-nav-sm .navbar {
